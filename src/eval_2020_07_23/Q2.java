@@ -29,24 +29,19 @@ public class Q2 {
             }
         }
         
-       pgn=tab[0][0];
+        pgn=tab[0][0];
         ppn=tab[0][0];
         for(i=0; i<nl; i++){
             for(j=0; j<nc; j++){
                 if(tab[i][j]<ppn){
                     ppn=tab[i][j];
                 }
-            }
-        }
-        
-         for(i=0; i<nl; i++){
-            for(j=0; j<nc; j++){
-                if(pgn<tab[i][j]){
+                else if(pgn<tab[i][j]){
                     pgn=tab[i][j];
                 }
             }
         }
-        
+          
         amp=pgn-ppn;
       
         System.out.println( amp + " est la plus petite valeur ");

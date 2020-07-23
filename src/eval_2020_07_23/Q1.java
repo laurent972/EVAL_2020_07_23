@@ -13,7 +13,7 @@ public class Q1 {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
         
-        final int n=5;
+        final int n=10;
         int[] tab;
         int i;
         tab = new int [n];
